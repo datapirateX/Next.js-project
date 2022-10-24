@@ -1,6 +1,4 @@
-import { Fragment } from "react";
 import classes from './MeetupDetail.module.css';
-import MeetupDetails from "../../pages/[meetupId]";
 
 function MeetupDetail(props) {
   return (
@@ -9,8 +7,8 @@ function MeetupDetail(props) {
         src={props.image}
         alt={props.title}
       />
-      <h1>A First Meetup</h1>
-      <address>Some Street 5, Some City</address>
+      <h1>{props.title}</h1>
+      <address>{props.address}</address>
       <p>{props.description}</p>
     </section>
   );
